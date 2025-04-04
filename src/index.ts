@@ -9,7 +9,7 @@ const port = process.env.PORT || 8090;
 
 async function init() {
     await mongoose.connect(process.env.CONNECTION_STRING!, {
-        dbName: process.env.intM3,
+        dbName: "intM3" ,
     });
 
     server.listen(port, () => console.log(`Server listening on port ${port}`));

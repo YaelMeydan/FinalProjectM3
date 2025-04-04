@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:watch": "jest --watch",
     "dev": "npm-run-all -p dev:*",
     "dev:server": "tsx --no-check --watch src/index.ts",
     "dev:client": "tsc --watch --project tsconfig.client.json --noCheck",
